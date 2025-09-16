@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Site/Famcs.png">
+    <title>F&MCSgames - Contacts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <style>
+        .game-title {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+            transition: transform 0.2s ease-in-out;
+            cursor: pointer;
+        }
+        .game-title:hover {
+            transform: scale(1.05);
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+        footer {
+            flex-shrink: 0;
+        }
+        .contact-section {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #1a202c;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-item {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-black font-sans text-white">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12">
+                    <img src="/Site/Enot.png" alt="F&MCSgames Logo" class="w-full h-full object-contain">
+                </div>
+                <h1 class="game-title" onclick="location.href='/Site/index.html';">F&MCSgames</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="/Site/index.html" class="hover:underline" onclick="location.reload();">Main</a></li>
+                    <li><a href="/Site/Rules/rules.html" class="hover:underline">The rules of the games</a></li>
+                    <li><a href="/Site/About us/about_us.html" class="hover:underline">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container mx-auto py-8">
+        <h2 class="text-3xl font-semibold text-center mb-8">Contacts</h2>
+        <div class="contact-section">
+            <div class="contact-item">
+                <h3 class="text-xl">Artem | https://github.com/aR73M1CH</h3>
+                <ul class="list-disc pl-5">
+                    <li>Role: Developer-designer</li>
+                    <li>Email: bohgdewitch3@gmail.com</li>
+                    <li>Phone: +375 33 618-88-17</li>
+                </ul>
+            </div>
+            <div class="contact-item">
+                <h3 class="text-xl">Matvey | https://github.com/M6tyA</h3>
+                <ul class="list-disc pl-5">
+                    <li>Role: Developer-designer</li>
+                    <li>Email: Matvey.moty.swim@gmail.com</li>
+                    <li>Phone: +375 29 249-28-47</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Belarusian State University. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="#" class="hover:underline">Contacts</a> | 
+                <a href="/Site/Privacy_policy/privacy_policy.html" class="hover:underline">Privacy policy</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

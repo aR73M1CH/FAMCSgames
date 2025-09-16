@@ -1,0 +1,148 @@
+@keyframes spin {
+    0% {
+        transform: translateY(0);
+        filter: blur(0);
+    }
+
+    20% {
+        transform: translateY(-20px);
+        filter: blur(3px);
+    }
+
+    80% {
+        transform: translateY(-80px);
+        filter: blur(3px);
+    }
+
+    100% {
+        transform: translateY(-100px);
+        filter: blur(0);
+    }
+}
+
+@keyframes settle {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes neonPulse {
+    0% {
+        text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500, 0 0 15px #ffd700;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ffd700;
+    }
+}
+
+.reel.spinning {
+    animation: spin 0.08s linear infinite;
+}
+
+.reel.settling {
+    animation: settle 0.2s ease-in-out;
+}
+
+.reel {
+    transition: all 0.2s ease-out;
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d4af37;
+    border: 2px solid #ff4500;
+    border-radius: 8px;
+    color: #1a202c;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.7);
+}
+
+    .reel.emoji {
+        transform: scale(1.2);
+        transition: transform 0.1s ease-out;
+    }
+
+    .reel.letter {
+        font-size: 1.5rem;
+    }
+
+.casino-container {
+    background: linear-gradient(45deg, #1a202c, #2d3748);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.casino-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 8px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ff4500, #ff6347);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+
+    .casino-button:hover {
+        background: linear-gradient(90deg, #ff6347, #ff4500);
+        transform: translateY(-2px);
+    }
+
+    .casino-button.slide-in {
+        animation: slideIn 0.3s ease-out forwards;
+    }
+
+#button-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.bet-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #ff4500, #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: neonPulse 1.5s infinite alternate;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+    .bet-text.slide-in {
+        animation: slideIn 0.5s ease-out forwards;
+    }
+
+    .bet-text:hover {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+    }

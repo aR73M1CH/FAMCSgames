@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/Site/Famcs.png">
+    <title>Фруктовый Слот-Автомат</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="balance">Баланс: 1000 кредитов</div>
+      <div id="free-spins-counter"></div>
+      <div id="slot-container">
+        <div id="slot-grid"></div>
+        <div id="line1" class="win-line"></div>
+        <div id="line2" class="win-line"></div>
+        <div id="line3" class="win-line"></div>
+        <div id="line4" class="win-line"></div>
+        <div id="line5" class="win-line"></div>
+      </div>
+      <div id="message"></div>
+      <div id="bet-controls">
+        <button id="bet-down">Ставка -</button>
+        <div id="bet-display">Ставка: 10 кредитов</div>
+        <button id="bet-up">Ставка +</button>
+      </div>
+      <button id="spin-button">Крутить</button>
+      <button id="rules-button">Показать правила</button>
+      <button id="exit-button">Выйти в главное меню</button>
+    </div>
+    <div id="rules-modal">
+      <div id="rules-content">
+        <h2>Правила и выплаты</h2>
+        <p>
+          Стоимость вращения: Выбранная ставка (10, 20, 50 или 100 кредитов)
+        </p>
+        <p>
+          Цель: Достичь 5000 кредитов, чтобы выиграть, или упасть до 0 кредитов,
+          чтобы проиграть.
+        </p>
+        <p>
+          Выигрыш: Три одинаковых символа в линии (горизонтальная или
+          диагональная).
+        </p>
+        <p>
+          Бонусная игра: 3 символа Scatter (🎰) (по одному на строку) активируют
+          10 бесплатных вращений с множителем 2x.
+        </p>
+        <h3>Выплаты:</h3>
+        <ul>
+          <li>🍒 Вишня: 2x ставка</li>
+          <li>🍋 Лимон: 3x ставка</li>
+          <li>🍊 Апельсин: 4x ставка</li>
+          <li>🍇 Виноград: 5x ставка</li>
+          <li>🔔 Колокол: 10x ставка</li>
+          <li>⭐ Звезда: 20x ставка</li>
+          <li>💎 Алмаз: 50x ставка</li>
+        </ul>
+        <p>Выигрышные линии:</p>
+        <ul>
+          <li>Верхняя строка, средняя строка, нижняя строка</li>
+          <li>Главная диагональ (сверху слева вниз вправо)</li>
+          <li>Вторичная диагональ (сверху справа вниз влево)</li>
+        </ul>
+        <button id="close-rules">Закрыть</button>
+      </div>
+    </div>
+    <div id="big-win-modal">
+      <div id="big-win-content">
+        <h2>Большой выигрыш!</h2>
+        <p id="big-win-message">
+          Вы выиграли <span id="big-win-amount"></span> кредитов!
+        </p>
+        <button id="close-big-win">Закрыть</button>
+      </div>
+    </div>
+
+    <div id="game-end-modal">
+      <div id="game-end-content">
+        <h2>Конец игры</h2>
+        <p id="game-end-message"></p>
+        <button id="restart-game">Начать заново</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById("exit-button").addEventListener("click", () => {
+        window.location.href = "sait.html";
+      });
+    </script>
+  </body>
+</html>

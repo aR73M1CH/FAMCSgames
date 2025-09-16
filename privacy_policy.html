@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Site/Famcs.png">
+    <title>F&MCSgames - Privacy Policy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        .game-title {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+            transition: transform 0.2s ease-in-out;
+            cursor: pointer;
+        }
+        .game-title:hover {
+            transform: scale(1.05);
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+        footer {
+            flex-shrink: 0;
+        }
+        .policy-section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #1a202c;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .policy-item {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-black font-sans text-white">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12">
+                    <img src="/Site/Enot.png" alt="F&MCSgames Logo" class="w-full h-full object-contain">
+                </div>
+                <h1 class="game-title" onclick="location.href='/Site/index.html';">F&MCSgames</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="/Site/index.html" class="hover:underline" onclick="location.reload();">Main</a></li>
+                    <li><a href="/Site/Rules/rules.html" class="hover:underline">The rules of the games</a></li>
+                    <li><a href="/Site/About us/about_us.html" class="hover:underline">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container mx-auto py-8">
+        <h2 class="text-3xl font-semibold text-center mb-8">Privacy Policy</h2>
+        <div class="policy-section">
+            <div class="policy-item">
+                <h3 class="text-xl">1. Information We Collect</h3>
+                <p>We collect personal information such as your name, email, and usage data to enhance your gaming experience.</p>
+            </div>
+            <div class="policy-item">
+                <h3 class="text-xl">2. Data Sharing</h3>
+                <p>We do not share your personal information with third parties except as required by law or with your consent.</p>
+            </div>
+            <div class="policy-item">
+                <h3 class="text-xl">3. Security</h3>
+                <p>We implement security measures to protect your data, but no online service is completely secure.</p>
+            </div>
+            <div class="policy-item">
+                <h3 class="text-xl">4. Your Rights</h3>
+                <p>You have the right to access, update, or delete your personal information. Contact us for assistance.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Belarusian State University. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="/Site/Contacts/contacts.html" class="hover:underline">Contacts</a> | 
+                <a href="#" class="hover:underline">Privacy policy</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
